@@ -9,7 +9,7 @@
 <body>
   <p align="center" id="description">Let us know your learning preferences</p>
   <form id="survey-form">
-    
+    <p>Name</p> <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
     </form>
 </body>
 
