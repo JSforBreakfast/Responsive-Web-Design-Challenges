@@ -13,11 +13,11 @@
 }
 
 input:invalid {
-  border: 2px dashed red;
+  border: 2px solid red;
 }
 
 input:valid {
-  border: 2px solid black;
+  border: 2px solid green;
 }
    </style>
 <head>
@@ -30,9 +30,12 @@ input:valid {
     
     <p>* Name:</p> <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
     
-    <p>* Email:</p> <input type="email" email="email" id="email" class="input-field" placeholder="Enter your email" required>
+    <p>* Email:</p> <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+    
+
     
     </form>
 </body>
 
 </html>
+
