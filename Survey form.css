@@ -1,7 +1,25 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <html>
+ <style>
+   .container {
+  width: 500px;
+  clear: both;
+}
 
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+   </style>
 <head>
   <h1 align="center" id="title">Survey Form</h1>
 </head>
@@ -9,8 +27,11 @@
 <body>
   <p align="center" id="description">Let us know your learning preferences</p>
   <form id="survey-form">
-    <p>Name</p> <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-    <p>Email</p> <input type="text" email="email" id="email" class="input-field" placeholder="Enter your email" required>
+    
+    <p>* Name:</p> <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    
+    <p>* Email:</p> <input type="email" email="email" id="email" class="input-field" placeholder="Enter your email" required>
+    
     </form>
 </body>
 
