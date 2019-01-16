@@ -32,10 +32,10 @@ input:valid {
     
     <p>* Email:</p> <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
     
+    <p>* Age:</p> <input type="number" name="age" id="number" class="input-field"placeholder="Enter your age" required>
 
     
     </form>
 </body>
 
 </html>
-
