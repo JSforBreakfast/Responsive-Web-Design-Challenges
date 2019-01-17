@@ -59,8 +59,24 @@ input:valid {
   <input type="radio" name="gender" value="male"> Male<br>
   <input type="radio" name="gender" value="female"> Female<br>
   <input type="radio" name="gender" value="other"> Other
-</select>
-    </form>
+      </select></div>
+      <div>
+      <select>
+        <form action="/action_page.php">
+  <input type="checkbox" name="course1" value="Pluralsight"> I use Pluralsight<br>
+  <input type="checkbox" name="course2" value="Codecademy"> I use codecademy<br>
+  <input type="checkbox" name="course3" value="FreeCodeCamp" checked> I use FreeCodeCamp<br><br>
+  <input type="submit" value="Submit">
+</form>
+      </select>
+         </div>
+    <br>
+    <div>
+    <textarea rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+    </div>
+  </form>
 </body>
 
 </html>
