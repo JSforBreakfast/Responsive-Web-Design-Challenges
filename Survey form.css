@@ -51,10 +51,15 @@ input:valid {
       <option  value="student">Student</option>
       <option value="job">Always working</option>
       <option value="learner">Always learning</option>
-      <option value="preferNo">Prefer not to say</option>
+      <option value="preferNo">Get off my business</option>
       <option value="other">Other</option>
     </select>
       </div>
+      <select action="">
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</select>
     </form>
 </body>
 
