@@ -1,6 +1,10 @@
 <html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+<style>
+  header {
+  position: fixed;
+}
+  </style>
 <header id="header">
   <div class="logo">
     <img id="header-img" src="https://images.launchbox-app.com/ae78e8ce-ae1f-43c3-aa04-56abf00c2536.png" alt="VVVVVV logo" />
