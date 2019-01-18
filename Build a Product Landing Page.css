@@ -14,6 +14,8 @@
   </nav>       </header> 
   
   <form id="form">
+    <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+  </form>
   <div class="container">
     </div>
   <section id="keyfeatures">
