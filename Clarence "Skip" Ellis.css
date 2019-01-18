@@ -1,11 +1,9 @@
-<div id="main">
-
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-
+<div id="main">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
-  
+
+
 .center {
   display: block;
   margin-left: auto;
@@ -13,7 +11,7 @@
   width: 10%;
 }
 #main {
-  text-align: center;  
+  text-align: left;
   }
 
 #image {
@@ -30,6 +28,38 @@ span {
     line-height: 80%;
   }
 
+html,body{
+  min-width:260px;
+  color:#333;
+}
+#main{
+  margin:30px auto;
+  padding:15px;
+  border:0px solid;
+  border-radius:5px;
+  background:#8ec3eb;
+}
+img{
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+#img-div{
+  margin:-5px;
+  margin-top:20px;
+  width:100%;
+  border:5px solid white;
+  background:white;
+}
+#img-caption{
+  margin:15px;
+}
+
+}
+blockquote{
+  font-style: italic;
+}
 </style>
 
 
@@ -94,7 +124,7 @@ In addition to research, Ellis especially enjoyed teaching introductory computer
 
   
     <hr>
-    <p> Coded with axé by <a href="https://twitter.com/JSforbreakfast" target="_blank">Vitor Emanuel</a></p>
+    <p> Code (to be continued) by <a href="https://twitter.com/JSforbreakfast" target="_blank">Vitor Emanuel</a></p>
   </footer>
 
      </div>
