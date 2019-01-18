@@ -1,17 +1,20 @@
+<html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <header id="header">
   <div class="logo">
-   <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/VVVVVV_logo.svg" alt="VVVVVV video game logo"/>
-     </div>
-  <nav id="nav-bar">
-    <ul>
-      <li><a class="nav-link" href="#gameplay">Gameplay</a></li>
-      <li><a class="nav-link" href="#plot">Plot</a></li>
-      <li><a class="nav-link" href="#development">Development</a></li>
-      <li><a class="nav-link" href="#Reviews">Reviews</a></li>
-      
+    <img id="header-img" src="https://images.launchbox-app.com/ae78e8ce-ae1f-43c3-aa04-56abf00c2536.png" alt="VVVVVV logo" />
+  </div>
+     <nav id="nav-bar"> 
+<ul>
+  <li><a class="nav-link" href="#reviews">Reviews</a></li>
+  <li><a class="nav-link" href="#about-the-game">About the game</a></li>
+      <li><a class="nav-link" href="#keyfeatures">Key features</a></li> 
     </ul>
-     
-    </nav>
-  </header>
+  </nav>       </header> 
+         
+         
+         
+         
+         
+         </html>
