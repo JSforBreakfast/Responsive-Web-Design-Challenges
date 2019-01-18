@@ -12,9 +12,17 @@
       <li><a class="nav-link" href="#keyfeatures">Key features</a></li> 
     </ul>
   </nav>       </header> 
+  <div class="container">
+    </div>
+  <section id="keyfeatures">
+    <div class="grid">
+          <h2>Key Features</h2>
+        <p><ul class="bb_ul"><li>Elegant, minimalistic level design.<br>						  </li><li>Challenging, fast and fun gameplay.<br>						  </li><li>Frequent checkpoints mean you never have to replay challenges you've already beaten.<br>						  </li><li>Over half an hour of chiptune music by composer Magnus Pålsson.<br>						  </li><li>Special game modes, including time trials and a no death mode.<br>					</li></ul></p> </div>
+        </section>
+<section id="about-the-game">
+    <iframe id="video" height="315" src="https://www.youtube.com/watch?v=sf06P-_1lkU" frameborder="0" allowfullscreen></iframe>
+  </section>
          
          
          
          
-         
-         </html>
