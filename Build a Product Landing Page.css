@@ -16,12 +16,13 @@ header {
     flex-wrap: wrap;
   }
 }
-
-@media screen and (min-width: 4em) {
-	.custom-logo-link img {
-		max-width: 100px;
+  
+  @media screen and (min-width: 1em) {
+	.header-img {
+		max-width: 50px;
 	}
 }
+
   </style>
 <header id="header">
   <div class="logo">
