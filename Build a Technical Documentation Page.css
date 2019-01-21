@@ -1,4 +1,54 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+    
+  #navbar {
+    position: fixed;
+    left:0;
+    bottom:0;
+    top:0;
+    width:300px;
+    background-color:#f7f7f7;
+    border-right: 1px solid #0f034f;
+    overflow:auto;  
+    padding:10px 0 15px 15px;
+
+}
+#navbar header {
+    border-right: 1px solid #0f034f;
+    border-bottom: 1px solid #0f034f;
+    width:315px;
+    height:60px;
+    background-color:#f3f3f3;
+    padding-left:0;
+    text-align:center;
+    margin-left:-15px;
+    padding-top:25px;
+}
+
+@media screen and (max-width: 655px) {  
+  #navbar header {
+    background-color:white;  
+    border-top:5px;  
+    width:100%;
+    border-bottom: 0;  
+    position:fixed;
+    top:0;
+  }  
+
+  #navbar {
+    width:90%;
+    border:1px solid #0f034f;;    
+    height:135px;
+    overflow: auto;
+    margin-left:15px;
+    margin-right:15px;
+    padding-top:10px;  
+    top: 85px; 
+  } 
+}
+</style>
+
+<div id="wrapper">
 <nav id="navbar">
   <header>JS Documentation</header>
   <ul> 
@@ -18,6 +68,8 @@
     <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
   </ul>
 </nav>
+</div>
+<body>
 <main id="main-doc">
   <section class="main-section" id="Introduction">
     <header>Introduction</header>
@@ -261,3 +313,4 @@ A function definition (also called a function declaration, or function statement
     </article>
     </section>
   </main>
+  </body>
