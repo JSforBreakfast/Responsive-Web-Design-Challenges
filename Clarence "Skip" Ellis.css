@@ -1,9 +1,14 @@
+<!DOCTYPE html>
+<html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<div id="main">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<script>
+const projectName = 'tribute-page';
+localStorage.setItem('Responsive Web Design', 'Tribute Page');
+</script>
+
 <style>
-
-
+ 
 .center {
   display: block;
   margin-left: auto;
@@ -11,7 +16,7 @@
   width: 10%;
 }
 #main {
-  text-align: left;
+  text-align: center;
   }
 
 #image {
@@ -28,16 +33,13 @@ span {
     line-height: 80%;
   }
 
-html,body{
-  min-width:260px;
-  color:#333;
-}
+
 #main{
   margin:30px auto;
   padding:15px;
   border:0px solid;
   border-radius:5px;
-  background:#8ec3eb;
+  background:#D3D3D3;
 }
 img{
   max-width: 100%; 
@@ -52,9 +54,6 @@ img{
   border:5px solid white;
   background:white;
 }
-#img-caption{
-  margin:15px;
-}
 
 }
 blockquote{
@@ -62,16 +61,20 @@ blockquote{
 }
 </style>
 
+  <body>
+<div id="main">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
 <div id="title">
     <h1><strong>Clarence "Skip" Ellis</strong></h1>
   </div>
   
-    <h2 id="tribute-info"><strong>Computer Scientist</strong></h2>
+    <h5 id="tribute-info"><strong>First African American to obtain a PhD in computer science (1969)</strong></h5>
   
-   <div id="img-div"> <a href= "https://teachyourselfcs.com/" target= "blank"><img id="image" src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000' onmouseout= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000'" onmouseover= "this.src= 'https://i.pinimg.com/originals/71/8e/7a/718e7ad659e23356c35d37e76eaeafc0.jpg'" alt="Clarence 'Skip' Ellis"class="center"> </a> <p id="img-caption">1943 - 2014</p>
+   <div id="img-div"> <a href= "https://teachyourselfcs.com/" target= "blank"><img id="image" src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000' onmouseout= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000'" onmouseover= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg'" alt="Clarence 'Skip' Ellis"class="center"> </a> <p id="img-caption">1943 - 2014</p>
   </div>
   <br>
+  <article>
   <div class="text-left">
   <h2 id="Childhood"><strong>Childhood</strong></h2>
 
@@ -88,6 +91,7 @@ blockquote{
 <div>
     <h2 class="text-center" id="Going to college"><strong>Going to college</strong></h2>
   <div class="written">
+    
     <p><span>O</span>ver the next couple of years, teachers recommended that Skip attend summer programs at local universities. For the first time, Skip met students outside of his neighborhood and became aware of university life. Skip's family couldn't afford to send him to college. But, as he was about to graduate from high school, the pastor in his family's church learned about a scholarship at Beloit College. Beloit is located in Wisconsin, about 100 miles northwest of Chicago. Skip won the scholarship and, in the fall of 1960, arrived on campus. He discovered that he was the only African-American attending the school! Life in south Chicago was hard, but this was much worse. He felt very alone. He soon learned that his classes were much more difficult than any of those at his high school. Everyone seemed smarter, more aware and better educated.</p>
 
 <p>
@@ -114,8 +118,8 @@ Ellis has also worked in computer research and development for IBM, Microelectro
 <p>
 In addition to research, Ellis especially enjoyed teaching introductory computer science courses where he could encourage minority students to explore a variety of career options and challenge their minds. He even helped develop a summer program at the University of Colorado, called Summer Multicultural Access to Research Training (SMART), to provide internships in science and engineering. Ellis hoped that his teaching efforts would make his students’ access into non-traditional fields easier than his experiences.
     </p>
-   
     </div>
+    </article>
   <blockquote class="text-center">
     <p class="bg-danger">"People put together an image of what I was supposed to be"</p>
     <footer><cite><a href="http://www.math.buffalo.edu/mad/computer-science/ellis_clarencea.html"id="tribute-link" target="_blank">Clarence "Skip" Ellis</a></cite></footer>
@@ -129,3 +133,6 @@ In addition to research, Ellis especially enjoyed teaching introductory computer
 
      </div>
     </div>
+     </body>
+    </html>
+       
