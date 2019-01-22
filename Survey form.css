@@ -1,6 +1,8 @@
+<!DOCTYPE html>
+<html>
+
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<html>
  <style>
    .container {
   width: 500px;
@@ -25,9 +27,10 @@ input:valid {
 </head>
 
 <body>
-  
-  <p align="center" id="description">What kind of student are you?</p>
-  <form id="survey-form">
+   <div id="form-outer">
+  <p align="center" id="description">What's your favorite platform to learn to code?
+   </p>
+  <form id="survey-form" method="POST">
      
  
     <label id="name-label">
