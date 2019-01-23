@@ -3,13 +3,19 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <style>
- .center {
+  .center {
   display: block;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: auto;
+  margin-right: auto;
   width: 10%;
 }
-
+body {
+  display:block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right:50px;
+}
 .center {
   display: block;
   margin: auto;
@@ -18,12 +24,14 @@
 
 
 p {
-max-width: 700px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 100px;
-  margin-left: 100px;
+max-width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
   text-align: justify;
+  display: block;
+  font-size:20px;
 }
 h1{
   text-align: center;
@@ -41,10 +49,11 @@ h2 {
     text-align: center;
   }
 #image {
-  max-width: 700px;
+  max-width: auto;
   height: auto;
   display: block;
   image-align: center;
+  display:block;
 }
 
 #html {
@@ -52,11 +61,12 @@ h2 {
      }
 
 #main{
-  margin:5px auto;
+  margin:auto;
   padding:200px;
   border:0px solid;
   border-radius:5px;
   background:#B0C4DE;
+  display:block;
 }
 #img{
   max-width: 100%; 
@@ -74,7 +84,7 @@ h2 {
 
 blockquote {
   font-style: italic;
-  align-text: center
+  align-text:center;
 }
 
 </style>
