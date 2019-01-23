@@ -13,7 +13,7 @@
   text-align:center;
   min-width:260px;
   color:#00000; 
-  background-color: transparent;
+ background-image: url("https://asegrad.tufts.edu/sites/default/files/images/programs/GradPrograms_Dept-CS_LandingPage.jpg");
 }
 
 img{
@@ -94,7 +94,6 @@ blockquote {
   font-style: italic;
   align-text:center;
 }
-
 </style>
 
   <body>
@@ -178,9 +177,9 @@ In addition to research, Ellis especially enjoyed teaching introductory computer
   <br>
     <hr>
     <p> Code (to be continued) by <a href="https://twitter.com/JSforbreakfast" target="_blank">Vitor Emanuel</a></p>
-  </footer>
-     </div>
-    </div>
+    <br>
+    <br>
+        <div id="references">
     <h4>Pages visited:</h4>
     <ul>
     <il><a href="https://adinkraresearchproject.wordpress.com/about/" target="blank">Adinkra Research Project,</a></il>
@@ -191,6 +190,10 @@ In addition to research, Ellis especially enjoyed teaching introductory computer
       <il><a href="https://www.hpc-diversity.ac.uk/faces-of-hpc/clarence-skip-arthur-ellis" target="blank">Faces of HPC, and</a></il>
         <il><a href="https://www.encyclopedia.com/education/news-wires-white-papers-and-books/ellis-clarence-1943" target="blank">Ellis Clarence A. 1943–2014.</a></il>
     </ul>
+      </div> 
+  </footer>
+     </div>
+    </div>
      </body>
     </html>
        
