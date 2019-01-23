@@ -3,22 +3,51 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <style>
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}
-body {
+ html, body {
   display:block;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
   margin-right:50px;
+  font-family: "Lucida Console", Monaco, monospace;;
+  text-align:center;
+  min-width:260px;
+  color:#00000; 
+  background-color: transparent;
 }
+
+img{
+   max-width: 100%;
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+
+#img-div{
+  margin:-5px;
+  margin-top:20px;
+  width:100%;
+  border:5px solid white;
+  background:white;
+  max-width: auto;
+}
+#img-caption{
+  text-align:center;
+}
+
+#main{
+  margin:30px auto;
+  padding:15px;
+  border:0px solid;
+  border-radius:5px;
+ 
+}
+
 .center {
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto
   width: 10%;
 }
 
@@ -31,55 +60,34 @@ max-width: auto;
   margin-left: auto;
   text-align: justify;
   display: block;
-  font-size:20px;
+  font-size:17px;
+  text-indent: 3%;
 }
 h1{
   text-align: center;
 }
 h4{
-  text-align: center;
+  text-align: justify;
 }
 h2 {
   text-align: center;
   }
-#img-caption{
-  text-align:center;
+ul {
+  text-align:justify
 }
 #tribute-info {
     text-align: center;
   }
-#image {
-  max-width: auto;
-  height: auto;
-  display: block;
-  image-align: center;
-  display:block;
+#clarence {
+  
 }
-
-#html {
-        font-family: sans-serif-karla;
-     }
-
 #main{
-  margin:auto;
-  padding:200px;
+  margin:30px auto;
+  padding:15px;
   border:0px solid;
   border-radius:5px;
   background:#B0C4DE;
   display:block;
-}
-#img{
-  max-width: 100%; 
-  display: block; 
-  height: auto;
-  margin: auto;
-}
-#img-div{
-  margin:-5px;
-  margin-top:20px;
-  width:100%;
-  border:5px solid white;
-  background:white;
 }
 
 blockquote {
@@ -119,28 +127,39 @@ blockquote {
   <div class="written">
     
     <p>Over the next couple of years, teachers recommended that Skip attend summer programs at local universities. For the first time, Skip met students outside of his neighborhood and became aware of university life. Skip's family couldn't afford to send him to college. But, as he was about to graduate from high school, the pastor in his family's church learned about a scholarship at Beloit College. Beloit is located in Wisconsin, about 100 miles northwest of Chicago. Skip won the scholarship and, in the fall of 1960, arrived on campus. He discovered that he was the only African-American attending the school! Life in south Chicago was hard, but this was much worse. He felt very alone. He soon learned that his classes were much more difficult than any of those at his high school. Everyone seemed smarter, more aware and better educated.</p>
-
+<br>
 <p>
   At Beloit, a teacher gave Ellis extra lessons in the subjects that he was finding the most difficult, such as English. He studied constantly and had no time to do many of the fun things that other students seemed to enjoy. He even stayed on campus to study during winter and summer breaks. Skip was so sad and lonely that he thought about quitting many, many times. But he knew how proud his mother was of his accomplishments. She had constantly encouraged him, saying, "be your own person and follow your talents." He vowed to stay.
     </p>
+    <br>
     <p>
-At the beginning of his junior year, an Illiac IV Parallel Computer was donated to the college. Skip and his chemistry professor were given the task of setting it up. This was the start of the college's computer lab, and it was a big event in Skip's life - he finally felt like he belonged. He worked so long on the new computer that he sometimes slept overnight in the lab.</p><div align="center">
+At the beginning of his junior year, an Illiac IV Parallel Computer was donated to the college. Skip and his chemistry professor were given the task of setting it up. This was the start of the college's computer lab, and it was a big event in Skip's life - he finally felt like he belonged. He worked so long on the new computer that he sometimes slept overnight in the lab.</p>
+    <br>
+    <br>
+    <div align="center">
 <a href="http://www.flickr.com/photos/44124348109@N01"><img src="http://ideonexus.com/wp-content/uploads/2010/02/illiac4.jpg" border="0" width="425" height="341" alt="Illiac IV Parallel Computer"></a><br />
 <b>Illiac IV Parallel Computer</b><br />
 Credit: <a href="http://www.flickr.com/photos/44124348109@N01">Steve Jurvetson</a>
 </div>
-
+<br>
+<br>
 <p>During that period, the civil rights movement was gathering momentum across the country. Skip was especially moved by the non-violent protests of Dr. Martin Luther King. In August of 1963, Skip was one of 250,000 people who went to Washington, D.C., to hear Dr. King give his famous "I Have a Dream" speech from the steps of the Lincoln Memorial. From then on, Skip's passions were computer science and civil rights.</p> 
+    <br>
     <p>In 1964 Ellis graduated with a Bachelor of Science degree in math and physics, but he really wanted to pursue a career in computer science.</p>
     <br>
     <div>
+      
     <h2 class="text-center" id="Graduate-School-and-research"><strong>Graduate school and research</strong></h2>
       <div class="written">
     <p>Ellis decided to go to graduate school to learn more about computers. Few people encouraged him to pursue an advanced degree. “People put together an image of what I was supposed to be,” Ellis told Lydia Lum of Black Issues in Higher Education in February of 2000, "and that image did not include computer scientist". However, Ellis did not want to fit into a stereotypical mold, so he followed his passion. He attended graduate school at the University of Illinois in Urbana-Champaign. There he had the opportunity to work with the hardware and software of the Illiac IV. In 1969 Ellis became the first African American to earn a Ph.D. in computer science.</p>
+        <br>
     <p>After graduate school, Ellis’ first job was as a supercomputer researcher for AT&T Bell Telephone Laboratories. Next he worked as a research scientist for Xerox in Palo Alto, California. At this job, Ellis helped create the idea of clicking on a graphic to start a computer program or to issue a command, rather than typing in lines of computer code. This became a defining feature of the Apple computer and it was later incorporated into the Microsoft Windows operating system. The point-and-click feature of computers is so common today that most computer users are unfamiliar with the days when knowing programming code was the only way to work with a computer.</p>
+        <br>
 <p>
 Ellis has also worked in computer research and development for IBM, Microelectronics and Computer Technology Corporation, Los Alamos Scientific Labs, and Argonne National Laboratory. He has also held several academic positions at Stanford University, the University of Texas, Massachusetts Institute of Technology, and Stevens Institute of Technology. Ellis even traveled to Taiwan on an American Federation of Information Processing Societies (AFIPS) overseas teaching fellowship.</p>
+        <br>
     <p>In 1992 Ellis accepted an academic position at the University of Colorado at Boulder where he was a professor of computer science. In that capacity Ellis conducted research in the areas of workflow technology, groupware, cognitive science, object-oriented systems, computer supported cooperative work, and systems design and modeling. In particular, Ellis had worked to establish national standards to make computers more user-friendly. He was also the director of the Collaboration Technology Research group and a member of the Systems Software Laboratory and the Institute for Cognitive Science. In addition, Ellis published several books, and over 100 technical papers and reports, lectured in more than a dozen countries, and was an invited speaker on object oriented systems at the most recent IFIP World Computer Conference. His interests included groupware, coordination theory, object oriented systems, CSCW, office systems, databases, distributed systems, software engineering, world-wide-web (internetworking), systems design and modeling, workflow systems, and humane interfaces to computers.</p>
+        <br>
 <p>
 In addition to research, Ellis especially enjoyed teaching introductory computer science courses where he could encourage minority students to explore a variety of career options and challenge their minds. He even helped develop a summer program at the University of Colorado, called Summer Multicultural Access to Research Training (SMART), to provide internships in science and engineering. Ellis hoped that his teaching efforts would make his students’ access into non-traditional fields easier than his experiences.
     </p>
@@ -149,8 +168,10 @@ In addition to research, Ellis especially enjoyed teaching introductory computer
     <br>
     <br>
    <div class="text-center">
-    <p class="bg-danger">"People put together an image of what I was supposed to be,and that image did not include computer scientist"</p>
-    <p><a href="https://github.com/ossu/computer-science"id="tribute-link" target="_blank">Clarence "Skip" Ellis</a></p>
+    <quote class="quote">"People put together an image of what I was supposed to be, and that image did not include computer scientist"</quote>
+     <br>
+     <br>
+    <p id="clarence"><a href="https://github.com/ossu/computer-science"id="tribute-link" target="_blank">Clarence "Skip" Ellis</a></p>
     </div>
   <br>
   <br>
