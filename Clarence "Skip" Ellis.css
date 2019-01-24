@@ -1,83 +1,45 @@
 <!DOCTYPE html>
 <html>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 
 <style>
-html,
-body {
-  display: block;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-family: "Lucida Console", Monaco, monospace;
+html, body {
+   background-color: #483D8B;
   text-align: center;
-  min-width: 260px;
-  color: #00000f;
-  background-image: url("https://asegrad.tufts.edu/sites/default/files/images/programs/GradPrograms_Dept-CS_LandingPage.jpg");
+  font-family: "Lucida Console", Monaco, monospace;;
+  min-width: 320px;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: auto;
-}
-
-#img-div {
-  margin: -5px;
-  margin-top: 20px;
-  width: 100%;
-  border: 5px solid white;
-  background: white;
-  max-width: auto;
-}
-#img-caption {
-  text-align: center;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin: auto;
-  width: 10%;
-}
-
-p {
-  max-width: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: justify;
-  display: block;
-  font-size: 17px;
-  text-indent: 3%;
-}
-h1 {
-  text-align: center;
-}
-h4 {
-  text-align: justify;
-}
-h2 {
-  text-align: center;
-}
-ul {
-  text-align: justify;
-}
-#tribute-info {
-  text-align: center;
-}
-#main {
-  margin: 30px auto;
+#form-outer {
+  background-color:#E6E6FA;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 80%;
+  max-width: 900px;
   padding: 15px;
-  border: 0px solid;
-  border-radius: 5px;
-  background: #b0c4de;
-  display: block;
+  padding-top: 25px;
 }
+
+#title {
+  font-color: white;
+}
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}   
 
 </style>
 
@@ -90,7 +52,7 @@ ul {
     <h4 id="tribute-info"><strong>First African American to obtain a PhD in computer science (1969)</strong></h4>
 
     <div id="img-div"> <a href="https://teachyourselfcs.com/" target="blank"><img id="image" src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000' onmouseout= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000'" onmouseover= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg'" alt="Clarence 'Skip' Ellis"class="center"> </a>
-      <p id="img-caption">1943 - 2014</p>
+      <div id="img-caption">1943 - 2014</div>
     </div>
     <br>
     <article id="article">
