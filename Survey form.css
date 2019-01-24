@@ -3,8 +3,28 @@
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
- <style>
-   .container {
+<style>
+html, body {
+   background-color: #483D8B;
+  text-align: center;
+  font-family: "Lucida Console", Monaco, monospace;;
+  min-width: 320px;
+}
+
+#form-outer {
+  background-color:#E6E6FA;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 80%;
+  max-width: 900px;
+  padding: 15px;
+  padding-top: 25px;
+}
+
+#title {
+  font-color: white;
+}
+.container {
   width: 500px;
   clear: both;
 }
@@ -20,20 +40,22 @@ input:invalid {
 
 input:valid {
   border: 2px solid green;
-}
-   </style>
-<head>
-  <h1 align="center" id="title">Survey Form</h1>
-</head>
+}   
 
-<body>
-   <div id="form-outer">
-  <p align="center" id="description">What's your favorite platform to learn to code?
-   </p>
-  <form id="survey-form" method="POST">
-     
- 
-    <label id="name-label">
+</style>
+<main id="main">
+
+  <head>
+    <h1 align="center" id="title">Survey Form</h1>
+  </head>
+
+  <body>
+    <div id="form-outer">
+      <p align="center" id="description">What's your favorite platform to learn to code?
+      </p>
+      <form id="survey-form" method="POST">
+
+        <label id="name-label">
     <p>* Name:</p> <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
       <//label>
     <div>
@@ -42,14 +64,14 @@ input:valid {
     </label>
     </div>
     <div>
-       
-    <label id="number-label">
+
+      <label id="number-label">
      
     <p>* Age:</p> <input type="number" name="age" id="number" class="input-field" min="5" max="99" placeholder="Enter your age" required>
        
   </label>
       <div>
-     <select id="dropdown" name="currentPos" class="dropdown">
+        <select id="dropdown" name="currentPos" class="dropdown">
       <option disabled value>Select an option</option>
       <option  value="student">Student</option>
       <option value="job">Always working</option>
@@ -63,7 +85,7 @@ input:valid {
   <input type="radio" name="gender" value="female"> Female<br>
   <input type="radio" name="gender" value="other"> Other
       </select></div>
-      <div>
+    <div>
       <select>
         <form action="/action_page.php">
   <input type="checkbox" name="course1" value="Pluralsight"> I use Pluralsight<br>
@@ -72,18 +94,19 @@ input:valid {
   <input type="submit" value="Submit">
 </form>
       </select>
-         </div>
+    </div>
     <br>
     <div>
-    <textarea rows="4" cols="50">
+      <textarea rows="4" cols="50">
 
 </textarea>
     </div>
     <form action="/action_page.php" id="form1">
 
-<input id="submit" type="submit" value="Submit">
-</form>
-  </form>
-</body>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+    </form>
+  </body>
+</main>
 
 </html>
