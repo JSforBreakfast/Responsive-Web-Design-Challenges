@@ -70,14 +70,15 @@ input[type="checkbox"] {
 }
 
 #submit {
-  background-color: grey;
+  background-color: white;
   border-radius: 4px;
   color: white;
   font-size: 1em;
   height: 40px;
   width: 96px;
   margin: 10px;
-  border: 0px solid;
+  border: 0px solid white;
+  color: gray;
 }
 
 .dropdown {
@@ -88,6 +89,7 @@ input[type="checkbox"] {
   margin-top: 15px;
   border: 1px solid white;
   border-radius: 2px;
+  color:gray;
 }
 
 .radio,
@@ -130,54 +132,72 @@ input[type="checkbox"] {
 <body>
   <h1 id="title"><strong>
 
-    Survey form</strong></h1>
+    Listener survey</strong></h1>
   <div id="form-outer">
-    <p id="description">
-      <h4><strong>
+    <h4>
+      <p id="description">
+        <strong>
       Software Development Podcasts
-    </strong></h4>
-    </p>
+    </strong>
+      </p>
+    </h4>
     </strong>
     <form id="survey-form" method="POST" action="https://crossorigin.me/https://freecodecamp.com">
 
       <br>
       <div>
         <div class="labels">
-          <label for="currentPos">Which coding podcast is your favorite?</label>
+          <label for="FavoritePodcast">Which coding podcast is your favorite?</label>
         </div>
         <div class="rightTab">
-          <select id="dropdown" name="currentPos" class="dropdown">
+          <select id="dropdown" name="FavoritePodcast" class="dropdown">
       <option disabled value>Select one</option>
-      <option  value="student">Code Newbie</option>
-      <option value="job">Command Line Heroes</option>
-      <option value="learner">Full Stack Radio</option>
-      <option value="preferNo">JavaScript Jabber</option>
-      <option value="other">Back to Front Show</option>
-      <option value="other">The Web Platform Podcast</option>
-      <option value="other">Responsive Web Design Podcast</option>
-      <option value="other">Talk Python To Me</option>
-            <option value="other">Other </option>
+                  <option  value="code_newbie">Code Newbie</option>
+            <option  value="women_in_tech_podcast">Women in Tech Podcast</option>
+      <option value="command_line_heroes">Command Line Heroes</option>
+      <option value="full_stack_podcast">Full Stack Radio</option>
+      <option value="javasscript_jabber">JavaScript Jabber</option>
+      <option value="back_to_front_show">Back to Front Show</option>
+      <option value="the_web platform_podcast">The Web Platform Podcast</option>
+      <option value="responsive_web_design_podcast">Responsive Web Design Podcast</option>
+      <option value="talk_python_to_me">Talk Python To Me</option>
+            <option value="LTCWM_PODCAST">LTCWM PODCAST</option>
+            <option value="CppCast">CppCast</option>
+            <option value="Software_Engineering_Daily">Software Engineering Daily</option>
+            <option value="other">Other</option>
     </select>
         </div>
       </div>
-      <br>
-      <br>
       <div>
         <div class="labels">
-          <label for="userRating"> How likely are you  to recommend at least three of them?</label>
+          <label for="comments">Which podcasts should we include on the list?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Make your suggestions" rows="4" cols="50"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      <br>
+      <br>
+      <hr>
+      <div>
+        <div class="labels">
+          <label for="userRating"> How often do yout listen to your favorite podcasts?</label>
         </div>
         <div class="rightTab">
           <ul style="list-style: none;">
-            <li class="radio"><label>Very Likely<input name="radio-buttons" value="1"  type="radio" ></label></li>
-            <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" ></label></li>
-            <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" ></label></li>
+            <li class="radio"><label>Every day<input name="radio-buttons" value="5"  type="radio" ></label></li>
+            <li class="radio"><label>Almost every day<input name="radio-buttons" value="4"  type="radio" ></label></li>
+            <li class="radio"><label>Sometimes<input name="radio-buttons" value="3"  type="radio" ></label></li>
+            <li class="radio"><label>Occasionally<input name="radio-buttons" value="2"  type="radio" ></label></li>
+            <li class="radio"><label>Rarely<input name="radio-buttons" value="1"  type="radio" ></label></li>
           </ul>
         </div>
       </div>
-
+      <hr>
       <div>
         <div class="labels">
-          <label for="most-like">What do you like the most about your favorite podcasts </label>
+          <label for="most-like">What do you like the most about your favorite podcasts?</label>
         </div>
         <div class="rightTab">
           <select id="most-like" name="mostLike" class="dropdown">
@@ -191,6 +211,18 @@ input[type="checkbox"] {
       </div>
       <div>
         <div class="labels">
+          <label for="comments">Tell us more</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Your opinion matters" rows="4" cols="50"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      <br>
+      <br>
+      <hr>
+      <div>
+        <div class="labels">
           <label for="preferences"><h5><strong>What are your interests?</strong></h5></ label>
         </div>
         <br>
@@ -198,10 +230,10 @@ input[type="checkbox"] {
         <div class="rightTab">
           <ul id="preferences" style="list-style: none;">
             <li class="checkbox"><label><input name="prefer" value="1" type="checkbox">Programming languages</label></li>
-          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Code journeys </li>
-          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox">Open source communities</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Gender/etchnic diversity in tech</li>
+          <li class="checkbox"><input name="prefer" value="3" type="checkbox">Code journeys </li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox">Open source communities</label></li>
           <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Software Engineering best practices</label></li>
-          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" >Developer lifestyle</label></li>
           <li class="checkbox"><label><input name="prefer" value="6" type="checkbox">Study habits/tips</label></li>
           <li class="checkbox"><label><input name="prefer" value="7" type="checkbox">Meetups in your area</label></li>
           <li class="checkbox"><label><input name="prefer" value="8" type="checkbox">Frameworks</label></li>
@@ -216,9 +248,17 @@ input[type="checkbox"] {
         </div>
       </div>
       <div>
-        <h3><strong>
-
-    About me</strong></h3>
+        <div class="labels">
+          <label for="comments">Not on the list?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Help us add new ones" rows="4" cols="50"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      <hr>
+      <div>
+        <h3><strong>About me</strong></h3>
         <div class="labels">
           <label id="name-label" for="name"> Name: </label>
         </div>
@@ -242,16 +282,22 @@ input[type="checkbox"] {
           <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
         </div>
       </div>
-      <div>
-        <div class="labels">
-          <label for="comments">Suggestions about topics you would like to listen to?</label>
-        </div>
-        <div class="rightTab">
-          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here" rows="4" cols="50"></textarea>
-        </div>
+      <div class="labels">
+        <label id="gender-label" for="gender"> Gender: </label>
       </div>
-      <button id="submit" type="submit">Submit</button>
-    </form>
+      <div class="rightTab">
+        <input autofocus type="text" name="gender" id="gender" class="input-field" placeholder="Enter your gender" required>
+      </div>
+  </div>
+  <div class="labels">
+    <label id="ethnicity-label" for="ethnicity"> Ethnicity: </label>
+  </div>
+  <div class="rightTab">
+    <input autofocus type="text" name="ethnicity" id="ethnicity" class="input-field" placeholder="Enter your ethnicity" required>
+  </div>
+  </div>
+
+  </form>
   </div>
 </body>
 
