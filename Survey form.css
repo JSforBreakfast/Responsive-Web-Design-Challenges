@@ -8,11 +8,12 @@
 
 html,
 body {
-  background-color: purple;
+  background-color: transparent;
   text-align: center;
-  font-family:font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-family:font-family: "Source Sans Pro", "Arial", sans-serif;;
+  color: white;
   min-width: 320px;
-  background-image: url("https://code.org/images/social-media/code-2018-creativity.png");
+  background-image: url("http://hdqwalls.com/wallpapers/triangles-colorful-background-nz.jpg");
 }
 
 header {
@@ -21,10 +22,11 @@ header {
   margin: 20px;
 }
 
+
 #form-outer {
-  background-color: rgb(250, 250, 250);
+  background-color:trasparent;
   margin: 0 auto;
-  border-radius: 4px;
+  border-radius: 5px;
   width: 75%;
   max-width: 900px;
   padding: 10px;
@@ -52,7 +54,7 @@ header {
   width: 280px;
   padding: 5px;
   margin: 10px;
-  border: 1px solid #c0c0c0;
+  border: 1px solid white;
   border-radius: 2px;
 }
 
@@ -83,7 +85,7 @@ input[type="checkbox"] {
   padding: 5px;
   margin: 10px;
   margin-top: 15px;
-  border: 1px solid #c0c0c0;
+  border: 1px solid white;
   border-radius: 2px;
 }
 
@@ -125,13 +127,13 @@ input[type="checkbox"] {
 </style>
 
 <body>
-  <h1 id="title">
+  <h1 id="title"><strong>
 
-    Survey form</h1>
+    Survey form</strong></h1>
   <div id="form-outer">
-    <strong><p id="description">
+    <p id="description"><strong>
       Software Development Podcasts
-      </p></strong>
+      </strong></p></strong>
     <form id="survey-form" method="POST" action="https://crossorigin.me/https://freecodecamp.com">
       <div>
         <div class="labels">
@@ -157,13 +159,14 @@ input[type="checkbox"] {
           <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
         </div>
       </div>
+      <br>
       <div>
         <div class="labels">
           <label for="currentPos">Which coding podcast below is your favorite?</label>
         </div>
         <div class="rightTab">
           <select id="dropdown" name="currentPos" class="dropdown">
-      <option disabled value>Select an option</option>
+      <option disabled value>Select one</option>
       <option  value="student">Code Newbie</option>
       <option value="job">Command Line Heroes</option>
       <option value="learner">Full Stack Radio</option>
@@ -196,11 +199,11 @@ input[type="checkbox"] {
         </div>
         <div class="rightTab">
           <select id="most-like" name="mostLike" class="dropdown">
-      <option disabled selected value>Select an option</option>
+      <option disabled selected value>Select one</option>
       <option value="The_information_they_provide">The information they provide</option>
       <option value="The_impression_of_having_company_while_coding">The impression of having company while coding</option>
       <option value="The_context_it_gives_you_to_better_understand_what_you're_learning">The context it gives you to better understand what you're learning</option>
-      <option value="I_don't know,_there_are_so_many_different_things"></option>
+      <option value="I_don't know,_there_are_so_many_different_things">I don't know, there are so many different things</option>
     </select>
         </div>
       </div>
