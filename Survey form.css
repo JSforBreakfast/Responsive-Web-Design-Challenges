@@ -105,7 +105,7 @@ input[type="checkbox"] {
   }
   select {
     width: 90%;
-  }
+      }
 }
 
 @media screen and (max-width: 500px) {
@@ -132,11 +132,93 @@ input[type="checkbox"] {
 
     Survey form</strong></h1>
   <div id="form-outer">
-    <p id="description"><strong>
+    <p id="description">
+      <h4><strong>
       Software Development Podcasts
-      </strong></p></strong>
+    </strong></h4>
+    </p>
+    </strong>
     <form id="survey-form" method="POST" action="https://crossorigin.me/https://freecodecamp.com">
+
+      <br>
       <div>
+        <div class="labels">
+          <label for="currentPos">Which coding podcast is your favorite?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select one</option>
+      <option  value="student">Code Newbie</option>
+      <option value="job">Command Line Heroes</option>
+      <option value="learner">Full Stack Radio</option>
+      <option value="preferNo">JavaScript Jabber</option>
+      <option value="other">Back to Front Show</option>
+      <option value="other">The Web Platform Podcast</option>
+      <option value="other">Responsive Web Design Podcast</option>
+      <option value="other">Talk Python To Me</option>
+            <option value="other">Other </option>
+    </select>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div>
+        <div class="labels">
+          <label for="userRating"> How likely are you  to recommend at least three of them?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Very Likely<input name="radio-buttons" value="1"  type="radio" ></label></li>
+            <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" ></label></li>
+            <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" ></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="labels">
+          <label for="most-like">What do you like the most about your favorite podcasts </label>
+        </div>
+        <div class="rightTab">
+          <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select one</option>
+      <option value="The_information_they_provide">The information they provide</option>
+      <option value="The_impression_of_having_company_while_coding">The impression of having company while coding</option>
+      <option value="The_context_it_gives_you_to_better_understand_what_you're_learning">The context it gives you to better understand what you're learning</option>
+      <option value="I_don't know,_there_are_so_many_different_things">I don't know, there are so many different things</option>
+    </select>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="preferences"><h5><strong>What are your interests?</strong></h5></ label>
+        </div>
+        <br>
+        <br>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox">Programming languages</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Code journeys </li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox">Open source communities</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Software Engineering best practices</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" >Developer lifestyle</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox">Study habits/tips</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox">Meetups in your area</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox">Frameworks</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Career paths/development</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Tech forums</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class-"userRatings">Tech entrepreneurship</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class-"userRatings">Machine Learning</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class-"userRatings">Data Science</label></li>
+          <li class="checkbox"><label><input name="prefer" value="15" type="checkbox" class-"userRatings">Other</label></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3><strong>
+
+    About me</strong></h3>
         <div class="labels">
           <label id="name-label" for="name"> Name: </label>
         </div>
@@ -158,77 +240,6 @@ input[type="checkbox"] {
         </div>
         <div class="rightTab">
           <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
-        </div>
-      </div>
-      <br>
-      <div>
-        <div class="labels">
-          <label for="currentPos">Which coding podcast below is your favorite?</label>
-        </div>
-        <div class="rightTab">
-          <select id="dropdown" name="currentPos" class="dropdown">
-      <option disabled value>Select one</option>
-      <option  value="student">Code Newbie</option>
-      <option value="job">Command Line Heroes</option>
-      <option value="learner">Full Stack Radio</option>
-      <option value="preferNo">JavaScript Jabber</option>
-      <option value="other">Back to Front Show</option>
-      <option value="other">The Web Platform Podcast</option>
-      <option value="other">Responsive Web Design Podcast</option>
-      <option value="other">Talk Python To Me</option>
-    </select>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div>
-        <div class="labels">
-          <label for="userRating"> How likely are you  to recommend at least three of them?</label>
-        </div>
-        <div class="rightTab">
-          <ul style="list-style: none;">
-            <li class="radio"><label>Very Likely<input name="radio-buttons" value="1"  type="radio" ></label></li>
-            <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" ></label></li>
-            <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" ></label></li>
-          </ul>
-        </div>
-      </div>
-      <br>
-      <div>
-        <div class="labels">
-          <label for="most-like">What do you like the most about your favorite podcasts </label>
-        </div>
-        <div class="rightTab">
-          <select id="most-like" name="mostLike" class="dropdown">
-      <option disabled selected value>Select one</option>
-      <option value="The_information_they_provide">The information they provide</option>
-      <option value="The_impression_of_having_company_while_coding">The impression of having company while coding</option>
-      <option value="The_context_it_gives_you_to_better_understand_what_you're_learning">The context it gives you to better understand what you're learning</option>
-      <option value="I_don't know,_there_are_so_many_different_things">I don't know, there are so many different things</option>
-    </select>
-        </div>
-      </div>
-      <div>
-        <div class="labels">
-          <label for="preferences">Aspects/topics you're looking for in the podcasts<br></ label>
-        </div>
-        <br>
-        <br>
-        <div class="rightTab">
-          <ul id="preferences" style="list-style: none;">
-            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox">Programming languages</label></li>
-          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Code journeys </li>
-          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox">Open source communities</label></li>
-          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Software Engineering best practices</label></li>
-          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" >Developer lifestyle</label></li>
-          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox">Study habits/tips</label></li>
-          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox">Meetups in your area</label></li>
-          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox">Frameworks</label></li>
-          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Career paths/development</label></li>
-          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Tech forums</label></li>
-          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Courses</label></li>
-          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class-"userRatings">Tech entrepreneurship</label></li>
-          </ul>
         </div>
       </div>
       <div>
