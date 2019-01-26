@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -133,9 +134,9 @@ input[type="checkbox"] {
   <h1 id="title"><strong>
 
     Listener survey</strong></h1>
-  
+  <div id="form-outer">
     <h4>
-      <p id="description" id="form-outer">
+      <p id="description">
         <strong>
       Software Development Podcasts
     </strong>
@@ -222,13 +223,15 @@ input[type="checkbox"] {
       <br>
       <hr>
       <div>
-        <div class="rightTab">
-          <div class="labels">
-          <label form="preferences"><h5><strong>What are your interests?</strong></h5></ label>
+        <div class="labels">
+          <label for="preferences"><h5><strong>What are your interests?</strong></h5></ label>
         </div>
+        <br>
+        <br>
+        <div class="rightTab">
           <ul id="preferences" style="list-style: none;">
             <li class="checkbox"><label><input name="prefer" value="1" type="checkbox">Programming languages</label></li>
-          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Gender/etchnic diversity in tech</li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Gender/ethnic diversity in tech</li>
           <li class="checkbox"><input name="prefer" value="3" type="checkbox">Code journeys </li>
           <li class="checkbox"><label><input name="prefer" value="4" type="checkbox">Open source communities</label></li>
           <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Software Engineering best practices</label></li>
@@ -245,7 +248,7 @@ input[type="checkbox"] {
           </ul>
         </div>
       </div>
-      <div>
+      
         <div class="labels">
           <label for="comments">Not on the list?</label>
         </div>
@@ -255,7 +258,7 @@ input[type="checkbox"] {
       </div>
       <button id="submit" type="submit">Submit</button>
       <hr>
-      
+      <div>
         <h3><strong>About me</strong></h3>
         <div class="labels">
           <label id="name-label" for="name"> Name: </label>
@@ -263,7 +266,7 @@ input[type="checkbox"] {
         <div class="rightTab">
           <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
         </div>
-      
+      </div>
       <div>
         <div class="labels">
           <label id="email-label" for="email"> Email: </label>
@@ -286,7 +289,7 @@ input[type="checkbox"] {
       <div class="rightTab">
         <input autofocus type="text" name="gender" id="gender" class="input-field" placeholder="Enter your gender" required>
       </div>
-  </>
+  </div>
   <div class="labels">
     <label id="ethnicity-label" for="ethnicity"> Ethnicity: </label>
   </div>
@@ -298,5 +301,4 @@ input[type="checkbox"] {
   </form>
   </div>
 </body>
-
 </html>
