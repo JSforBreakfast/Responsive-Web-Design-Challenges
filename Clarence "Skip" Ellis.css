@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html>
-<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <style>
-html, body {
-   background-color: #483D8B;
-  text-align: center;
-  font-family: "Lucida Console", Monaco, monospace;;
-  min-width: 320px;
-}
-
-#form-outer {
-  background-color:#E6E6FA;
+* {
+  font-family: "Noto Serif JP", sans-serif;
   margin: 0 auto;
-  border-radius: 6px;
-  width: 80%;
-  max-width: 900px;
-  padding: 15px;
-  padding-top: 25px;
 }
 
-#title {
-  font-color: white;
+html,
+body {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  min-width: 260px;
+  color: #000033;
+  background: linear-gradient(to bottom right, #003333, #666666);
 }
-.container {
-  width: 500px;
-  clear: both;
+.grid {
+  
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  
 }
 
-.container input {
+#img-div {
+  margin: 0em;
+  margin-top: 5em;
   width: 100%;
-  clear: both;
+  border: -5em solid white;
+  border-radius: 20%;
+  background: white;
+  max-width: auto;
 }
 
-input:invalid {
-  border: 2px solid red;
+#img-caption {
+  text-align: center;
 }
 
-input:valid {
-  border: 2px solid green;
-}   
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  width: 10%;
+}
+
+p {
+  max-width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  display: block;
+  font-size: -25em;
+  text-indent: 3%;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  text-align: justify;
+}
+h2 {
+  text-align: center;
+}
+ul {
+  text-align: justify;
+}
+#tribute-info {
+  text-align: center;
+}
+#main {
+  margin: 30px auto;
+  padding: 15px;
+  border: 0px solid;
+  border-radius: 5px;
+  background: #33FF66;
+  display: block;
+}
 
 </style>
 
@@ -48,7 +95,7 @@ input:valid {
     <div id="title">
       <h1><strong>Clarence "Skip" Ellis</strong></h1>
     </div>
-
+<br>
     <h4 id="tribute-info"><strong>First African American to obtain a PhD in computer science (1969)</strong></h4>
 
     <div id="img-div"> <a href="https://teachyourselfcs.com/" target="blank"><img id="image" src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000' onmouseout= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg?w=1000'" onmouseover= "this.src= 'https://adinkraresearchproject.files.wordpress.com/2016/09/dr-clarence-a-skip-ellis.jpg'" alt="Clarence 'Skip' Ellis"class="center"> </a>
@@ -58,9 +105,9 @@ input:valid {
     <article id="article">
       <div>
         <h2 id="Childhood"><strong>Childhood</strong></h2>
-
+<br>
         <div>
-          <p>Clarence Arthur Ellis is the first African American to earn a Ph.D. in computer science. Although he was introduced to computers by accident, he developed a passion for understanding how they work, and he dedicated his career to improving how
+          <p>Clarence Arthur Ellis is the first African American to earn a Ph.D. in <a href="https://github.com/ossu/computer-science" id="tribute-link" target="_blank">computer science</a>. Although he was introduced to computers by accident, he developed a passion for understanding how they work, and he dedicated his career to improving how
             they function. Ellis worked as a computer science researcher for some of the country’s leading technological firms, while working at the University of Boulder, where he continued to pursue his research agenda, as well as teach new generations
             of computer scientists. Known among his friends and associates as "Skip", he was born in 1943 and grew up in a very poor neighborhood of the south side of Chicago. His mother struggled to raise five children by herself. Gangs and violence
             were common in school. Ellis wasn't one of the "cool" kids - he mostly kept to himself. At the time, he was sad because he felt excluded from so many things. Surprisingly, this helped him because he was able to avoid the gangs, violence and
@@ -69,6 +116,7 @@ input:valid {
         <br>
         <div>
           <h2 id="Discovering computers by accident" id="title"><strong>Discovering computers by accident</strong></h2>
+          <br>
           <div>
             <p>At 15, Skip took a job at a local insurance company to help support his family. He was assigned the "graveyard shift," which meant he had to work all night long. His job was to prevent break-ins and, most importantly, not to touch the company's
               brand new computer! It was 1958, and computers were very expensive, not very common, and they were also quite large, since microcircuits had not yet been invented. Ellis was not allowed to touch the new computer, but he did have access to
@@ -80,6 +128,7 @@ input:valid {
           <br>
           <div>
             <h2 id="Going to college"><strong>Going to college</strong></h2>
+            <br>
             <div>
 
               <p>Over the next couple of years, teachers recommended that Skip attend summer programs at local universities. For the first time, Skip met students outside of his neighborhood and became aware of university life. Skip's family couldn't afford
@@ -112,6 +161,7 @@ input:valid {
               <div>
 
                 <h2 id="Graduate-School-and-research"><strong>Graduate school and research</strong></h2>
+                <br>
                 <div>
                   <p>Ellis decided to go to graduate school to learn more about computers. Few people encouraged him to pursue an advanced degree. “People put together an image of what I was supposed to be,” Ellis told Lydia Lum of Black Issues in Higher
                     Education in February of 2000, "and that image did not include computer scientist". However, Ellis did not want to fit into a stereotypical mold, so he followed his passion. He attended graduate school at the University of Illinois
@@ -140,34 +190,15 @@ input:valid {
     </article>
     <br>
     <br>
-    <div>
-      <section class="">"People put together an image of what I was supposed to be, and that image did not include computer scientist"</section>
-      <br>
-      <br>
-      <p id="clarence"><a href="https://github.com/ossu/computer-science" id="tribute-link" target="_blank">Clarence "Skip" Ellis</a></p>
-    </div>
-    <br>
-    <br>
-    <br>
     <hr>
-    <p> Code (to be continued) by <a href="https://twitter.com/JSforbreakfast" target="_blank">Vitor Emanuel</a></p>
     <br>
     <br>
-    <div id="references">
-      <h4>Pages visited:</h4>
-      <ul>
-        <li><a href="https://adinkraresearchproject.wordpress.com/about/" target="blank">Adinkra Research Project,</a></li>
-        <li><a href="https://blackamericaweb.com/2014/12/01/little-known-black-history-fact-dr-clarence-skip-ellis/">Little Known Black History Fact: Dr. “Clarence” Skip Ellis,</a></li>
-        <li><a href="https://www.wikiwand.com/en/Clarence_Ellis_(computer_scientist)" target="blank">Clarence Ellis (computer scientist),</a></li>
-        <li><a href="https://cs.illinois.edu/news/memory-clarence-skip-ellis-1943-2014" target="blank">In memory of Clarence "Skip" Ellis, 1943-2014,</a></li>
-        <li><a href="http://www.math.buffalo.edu/mad/computer-science/ellis_clarencea.html">Computer scientists of the African Diaspora,</a></li>
-        <li><a href="https://www.hpc-diversity.ac.uk/faces-of-hpc/clarence-skip-arthur-ellis" target="blank">Faces of HPC, and</a></li>
-        <li><a href="https://www.encyclopedia.com/education/news-wires-white-papers-and-books/ellis-clarence-1943" target="blank">Ellis Clarence A. 1943–2014.</a></li>
-      </ul>
-    </div>
+    <footer>
+      <p>&copy; 2019 Developed by <a href="https://twitter.com/JSforbreakfast" target="_blank">Vitor Emanuel</a> (to be continued)</p>
     </footer>
-    </div>
-    </div>
+    <br>
+    <br>
+
 </body>
 
 </html>
