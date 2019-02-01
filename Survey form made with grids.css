@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width, initial-scale-1.0">
+<link rel="stylesheet" href="style.css">
+  
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Source Sans Pro:400,500);
+
+html,
+body {
+  background-color: transparent;
+  text-align: center;
+  font-family:font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: white;
+  min-width: 320px;
+  text-align:center;
+  background-image: url("http://hdqwalls.com/wallpapers/triangles-colorful-background-nz.jpg");
+}
+
+title {
+
+}
+
+header {
+    font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+sidebar {
+
+}
+
+content {
+
+}
+
+footer {
+
+}
+
+#form-outer {
+  background-color:trasparent;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: white;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid white;
+  color: gray;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid white;
+  border-radius: 2px;
+  color:gray;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 820px) {
+  .input-field {
+    width: 90%;
+  }
+  select {
+    width: 90%;
+      }
+}
+
+@media screen and (max-width: 500px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 90%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+ 
+  <div id="form-outer">
+   <h1 id="title"><strong>
+
+    Listener survey</strong></h1>
+    <h4>
+      <p id="description">
+        <strong>
+      Software Development Podcasts
+    </strong>
+      </p>
+    </h4>
+    </strong>
+    <form id="survey-form" method="POST" action="https://crossorigin.me/https://freecodecamp.com">
+
+      <br>
+      <div>
+        <div class="labels">
+          <label for="FavoritePodcast">Which coding podcast is your favorite?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="FavoritePodcast" class="dropdown">
+      <option disabled value>Select one</option>
+                  <option  value="code_newbie">Code Newbie</option>
+            <option  value="women_in_tech_podcast">Women in Tech Podcast</option>
+      <option value="command_line_heroes">Command Line Heroes</option>
+      <option value="full_stack_podcast">Full Stack Radio</option>
+      <option value="javasscript_jabber">JavaScript Jabber</option>
+      <option value="back_to_front_show">Back to Front Show</option>
+      <option value="the_web platform_podcast">The Web Platform Podcast</option>
+      <option value="responsive_web_design_podcast">Responsive Web Design Podcast</option>
+      <option value="talk_python_to_me">Talk Python To Me</option>
+            <option value="LTCWM_PODCAST">LTCWM PODCAST</option>
+            <option value="CppCast">CppCast</option>
+            <option value="Software_Engineering_Daily">Software Engineering Daily</option>
+            <option value="other">Other</option>
+    </select>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="comments">Which podcasts should we include on the list?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Make your suggestions" rows="4" cols="50"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      <br>
+      <br>
+      <hr>
+      <div>
+        <div class="labels">
+          <label for="userRating"> How often do yout listen to your favorite podcasts?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Every day<input name="radio-buttons" value="5"  type="radio" ></label></li>
+            <li class="radio"><label>Almost every day<input name="radio-buttons" value="4"  type="radio" ></label></li>
+            <li class="radio"><label>Sometimes<input name="radio-buttons" value="3"  type="radio" ></label></li>
+            <li class="radio"><label>Occasionally<input name="radio-buttons" value="2"  type="radio" ></label></li>
+            <li class="radio"><label>Rarely<input name="radio-buttons" value="1"  type="radio" ></label></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <div class="labels">
+          <label for="most-like">What do you like the most about your favorite podcasts?</label>
+        </div>
+        <div class="rightTab">
+          <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select one</option>
+      <option value="The_information_they_provide">The information they provide</option>
+      <option value="The_impression_of_having_company_while_coding">The impression of having company while coding</option>
+      <option value="The_context_it_gives_you_to_better_understand_what_you're_learning">The context it gives you to better understand what you're learning</option>
+      <option value="I_don't know,_there_are_so_many_different_things">I don't know, there are so many different things</option>
+    </select>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="comments">Tell us more</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Your opinion matters" rows="4" cols="50"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      <br>
+      <br>
+      <hr>
+      <div>
+        <div class="labels">
+          <label for="preferences"><h5><strong>What are your interests?</strong></h5></ label>
+        </div>
+        <br>
+        <br>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Programming languages</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Gender/ethnic diversity in tech</li>
+          <li class="checkbox"><input name="prefer" value="3" type="checkbox" class="userRatings">Code journeys </li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Open source communities</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Software Engineering best practices</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Study habits/tips</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Meetups in your area</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Frameworks</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Career paths/development</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Tech forums</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class-"userRatings">Tech entrepreneurship</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class-"userRatings">Machine Learning</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class-"userRatings">Data Science</label></li>
+          <li class="checkbox"><label><input name="prefer" value="15" type="checkbox" class-"userRatings">Other</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="labels">
+        <label for="comments">Not on the list?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Help us add new ones" rows="4" cols="50"></textarea>
+      </div>
+  </div>
+  <button id="submit" type="submit">Submit</button>
+  <hr>
+  <div>
+    <h3><strong>About me</strong></h3>
+    <div class="labels">
+      <label id="name-label" for="name"> Name: </label>
+    </div>
+    <div class="rightTab">
+      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    </div>
+  </div>
+  <div>
+    <div class="labels">
+      <label id="email-label" for="email"> Email: </label>
+    </div>
+    <div class="rightTab">
+      <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+    </div>
+  </div>
+  <div>
+    <div class="labels">
+      <label id="number-label" for="age"> Age: </label>
+    </div>
+    <div class="rightTab">
+      <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+    </div>
+  </div>
+  <div class="labels">
+    <label id="gender-label" for="gender"> Gender: </label>
+  </div>
+  <div class="rightTab">
+    <input autofocus type="text" name="gender" id="gender" class="input-field" placeholder="Enter your gender" required>
+  </div>
+  </div>
+  <div class="labels">
+    <label id="ethnicity-label" for="ethnicity"> Ethnicity: </label>
+  </div>
+  <div class="rightTab">
+    <input autofocus type="text" name="ethnicity" id="ethnicity" class="input-field" placeholder="Enter your ethnicity" required>
+  </div>
+  </div>
+  </form>
+  </div>
+
+<br>
+<br>
+<div class="footer">
+  <p> Developed by <a href="https://twitter.com/JSforbreakfast" target="_blank">Vitor Emanuel</a> (to be continued)</p>
+  </div>
+
+</html>
