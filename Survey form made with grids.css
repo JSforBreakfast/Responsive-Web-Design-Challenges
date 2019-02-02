@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-
+<!DOCTYPE ntml>
 <html>
 
-
 <style type="text/css">
+
 * {
   margin: 0;
   padding: 0;
@@ -24,36 +23,36 @@
 
 .title {
   grid-area: title;
-/*background-color: pink*/;
+background-color: pink;
 }
 
 .header {
   grid-area: header;
-  /*background-color: red*/;
+  background-color: red;
   }
 
 .sidebar {
   grid-area: sidebar;
-  /*background-color: yellow*/;
+  background-color: yellow;
   }
 
 .content {
-  grid-area: content
-      /*background-color: blue*/;
+  grid-area: content;
+  background-color: purple;
   }
 
 .footer{
   grid-area: footer;
-  /*background-color: green*/;
+  background-color: green;
   }
 
- .grid div:nth-child(odd) {
+ /*.grid div:nth-child(odd) {
   background-color:green;
   }
 
 .grid div:nth-child(even) {
   background-color: red; 
-}
+}*/
 
 /*css code below for desktop versions*/ 
 @media screen and (min-width: 736px) {
@@ -69,20 +68,20 @@
 }
 }
 
-</style>
+  </style>
 <head>
 <meta charset="utf-8">
 <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
 <link rel="stylesheet" href="style.css">
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<title></title>
 </head>
-<main>
-<body class="grid">
+<body>
+<div class="grid">
 <div class="title">title</div>
 <div class="header">header</div>
 <div class="sidebar">sidebar</div>
 <div class="content">content</div>
 <div class="footer">footer</div>
+</div>
 </body>
-</main>
 </html>
