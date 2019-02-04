@@ -23,7 +23,8 @@
     ". opinion opinion ."
     ". interests interests ."
     ". personal personal ."
-    ". footer footer .";
+    ". submit submit ."
+    ". button button .";
     grid-gap: 5%;
   }
   
@@ -93,6 +94,17 @@
   padding-inline-end: 14%;
  }
 
+ .button {
+  grid-area:button;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+ }
+
+ .button:hover {
+   background-color: green;
+  }
+  
  .footer {
   grid-area: footer;
   background-color: darkmagenta;
@@ -121,6 +133,7 @@
     ". opinion opinion ."
     ". interests interests ."
     ". personal personal ."
+    ". button button ."
     ". footer footer .";
     gap: 5%;
   }
