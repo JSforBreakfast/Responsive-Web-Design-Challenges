@@ -78,10 +78,13 @@
   }
 
   .about-me {
-    text-align: start;
-    padding-inline-end: 40%;
+    text-align: end;
+    padding-inline-end: 35%;
   }
-
+ .age {
+  text-align: end;
+  padding-inline-end: 14%;
+ }
    /*.grid div:nth-child(odd) {
     background-color:green;
     }
