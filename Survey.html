@@ -91,24 +91,57 @@ How often do yout listen to podcasts?</strong>
 <br>
 <br>
 <ul class="interests" id="preferences" style="list-style: none;">
-            <li class="checkbox"><label><input name="prefer" value="1" type="">Programming languages</label></li>
-          <li class="checkbox"><input name="prefer" value="2" type="">Gender/ethnic diversity in tech</li>
-          <li class="checkbox"><input name="prefer" value="3" type="">Code journeys </li>
-          <li class="checkbox"><label><input name="prefer" value="4" type="">Open source communities</label></li>
-          <li class="checkbox"><label><input name="prefer" value="4" type="" >Software Engineering best practices</label></li>
-          <li class="checkbox"><label><input name="prefer" value="6" type="">Study habits/tips</label></li>
-          <li class="checkbox"><label><input name="prefer" value="7" type="">Meetups in your area</label></li>
-          <li class="checkbox"><label><input name="prefer" value="8" type="">Frameworks</label></li>
-          <li class="checkbox"><label><input name="prefer" value="9" type="" class="userRatings">Career paths/development</label></li>
-          <li class="checkbox"><label><input name="prefer" value="10" type="" class="userRatings">Tech forums</label></li>
-          <li class="checkbox"><label><input name="prefer" value="11" type="" class="userRatings">Courses</label></li>
-          <li class="checkbox"><label><input name="prefer" value="12" type="" class-"userRatings">Tech entrepreneurship</label></li>
-          <li class="checkbox"><label><input name="prefer" value="13" type="" class-"userRatings">Machine Learning</label></li>
-          <li class="checkbox"><label><input name="prefer" value="14" type="" class-"userRatings">Data Science</label></li>
-          <li class="checkbox"><label><input name="prefer" value="15" type="" class-"userRatings">Other</label></li>
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox">Programming languages</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox">Gender/ethnic diversity in tech</li>
+          <li class="checkbox"><input name="prefer" value="3" type="checkbox">Code journeys </li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox">Open source communities</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Software Engineering best practices</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox">Study habits/tips</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox">Meetups in your area</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox">Frameworks</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Career paths/development</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Tech forums</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Courses</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class-"userRatings">Tech entrepreneurship</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class-"userRatings">Machine Learning</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class-"userRatings">Data Science</label></li>
+          <li class="checkbox"><label><input name="prefer" value="15" type="checkbox" class-"userRatings">Other</label></li>
           </ul>
+          <br>
+          <label for="comments"><strong>
+          Not on the list?</strong>
+          </label>
+          <br>
+          <br>
+<textarea class="input-field" style="height:4em;resize:vertical;" name="comment" placeholder="Your opinion matters" rows="4" cols="20">
+</textarea>
 </div>
-<div> </div> 
+
+<div class="personal">
+ <h3><strong>About me</strong></h3>
+ <br>
+ <div class="about-me">
+ <label class= "" for="name"> Name: </label>
+ <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+<br>
+<br>
+<label class="" for="email"> Email: </label>
+<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email" required>
+ <br>
+ <br>
+ <label class="" for="age"> Age: </label>
+ <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter your Age" required>
+ <br>
+ <br>
+ <label class="" for="gender"> Gender: </label>
+ <input autofocus type="text" name="gender" id="gender" class="input-field" placeholder="Enter your gender" required>
+<br>
+<br>
+<label class="" for="ethnicity"> Ethnicity: </label>
+<input autofocus type="text" name="ethnicity" id="ethnicity" class="input-field" placeholder="Enter your ethnicity" required>
+<br>
+</div>
+</div> 
 </div>
 </body>
 </html>

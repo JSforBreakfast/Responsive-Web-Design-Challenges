@@ -15,7 +15,8 @@
     ". content content ."
     ". radio radio ."
     ". opinion opinion ."
-    ". interests interests .";
+    ". interests interests ."
+    ". personal personal .";
     grid-gap: 5%;
   }
   
@@ -66,9 +67,20 @@
 }
 
 .checkbox {
-  text-align: start;
-  padding-inline-start: 15%;
-}
+  text-align: left;
+  padding-inline-start: 30%;
+   }
+
+   .personal {
+    grid-area: personal;
+    background-color: brown;
+    text-align: center;
+  }
+
+  .about-me {
+    text-align: start;
+    padding-inline-end: 40%;
+  }
 
    /*.grid div:nth-child(odd) {
     background-color:green;
@@ -90,7 +102,8 @@
     ". content content ."
     ". radio radio ."
     ". opinion opinion ."
-    ". interests interests .";
+    ". interests interests ."
+    ". personal personal .";
     gap: 5%;
   }
   }
