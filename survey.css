@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+  
+  /*css code below for mobile versions*/ 
+  .grid {
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". title title ."
+    ". header header ."
+    ". content content ."
+    ". radio radio ."
+    ". opinion opinion ."
+    ". interests interests .";
+    grid-gap: 5%;
+  }
+  
+.title {
+    grid-area: title;
+    background-color: pink;
+    text-align: center;
+}
+
+/*.title h1, h4 {
+    
+}*/
+  
+  .header {
+    grid-area: header;
+    background-color: red;
+    text-align: center;
+      }
+  
+  
+  .content {
+    grid-area: content;
+    background-color: purple;
+    text-align: center;
+  }
+  
+  .radio {
+    grid-area: radio;
+    background-color: green;
+    text-align: end;
+    padding-inline-end: 30%;
+  }
+  
+  .label {
+    margin-right: 5em;
+  }
+
+.opinion {
+  grid-area: opinion;
+  background-color: yellow;
+  text-align: center;
+}
+
+.interests {
+  grid-area: interests;
+    background-color: orange;
+    text-align: center;
+}
+
+.checkbox {
+  text-align: start;
+  padding-inline-start: 15%;
+}
+
+   /*.grid div:nth-child(odd) {
+    background-color:green;
+    }
+  
+  .grid div:nth-child(even) {
+    background-color: red; 
+  }*/
+  
+  /*css code below for desktop versions*/ 
+  @media screen and (min-width: 736px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+     grid-template-areas: 
+    ". title title ."
+    ". header header ."
+    ". content content ."
+    ". radio radio ."
+    ". opinion opinion ."
+    ". interests interests .";
+    gap: 5%;
+  }
+  }
