@@ -1,10 +1,16 @@
 
+
+
+
 * {
     margin: 0;
     padding: 0;
-    }
-  
-  /*css code below for mobile versions*/ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://www.publicdomainpictures.net/pictures/190000/velka/black-background-1468370534d5s.jpg"); 
+    color: green;
+  }
+
+    /*css code below for mobile versions*/ 
   .grid {
     display: grid;
     grid-template-columns:auto;
@@ -16,7 +22,8 @@
     ". radio radio ."
     ". opinion opinion ."
     ". interests interests ."
-    ". personal personal .";
+    ". personal personal ."
+    ". footer footer .";
     grid-gap: 5%;
   }
   
@@ -85,6 +92,13 @@
   text-align: end;
   padding-inline-end: 14%;
  }
+
+ .footer {
+  grid-area: footer;
+  background-color: darkmagenta;
+  text-align: center;
+}
+
    /*.grid div:nth-child(odd) {
     background-color:green;
     }
@@ -106,7 +120,8 @@
     ". radio radio ."
     ". opinion opinion ."
     ". interests interests ."
-    ". personal personal .";
+    ". personal personal ."
+    ". footer footer .";
     gap: 5%;
   }
   }
