@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    background-color: rgb(0, 0, 10);
+    color: blueviolet;
+  }
+
+/*css code below for mobile versions*/
+  .wrapper {
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat: auto;
+    grid-template-areas: 
+    ". header-img nav-bar nav-bar nav-bar ."
+    ". form form form form ."
+    ". container container container container .";   
+    grid-gap: 5%;
+  }
+
+  .header {
+    grid-area: header;
+    max-width: auto;
+    height: auto;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+    grid-column: 3/6;
+    text-align: center;
+    top: 0;
+}
+
+.header-img {   
+    grid-area: header-image;
+    grid-column: 1/6;
+    border-radius: 50%;
+    max-width: 5%;
+    height: auto;
+    margin-left: 1em;
+    position: sticky;
+    top: 0;
+    justify-self:start;
+}
+
+
+
+  /*css code below for desktop versions*/ 
+  @media screen and (min-width: 736px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      ". header header header header ."
+    ". form form form form ."
+    ". container container container container .";              
+      gap: 5%;
+    }
+    }
