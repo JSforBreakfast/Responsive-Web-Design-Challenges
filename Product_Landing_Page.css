@@ -1,20 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
-    background-color: rgb(0, 0, 10);
-    color: blueviolet;
+    font-family: '8BITWONDERNominal'; 
+   font-weight: normal; 
+   font-style: normal; 
+    background-color: rgb(50, 0, 55);
+    color: rgb(115, 185, 210);
   }
 
 /*css code below for mobile versions*/
   .wrapper {
     display: grid;
-    grid-template-columns:repeat(6, 1fr);
+    grid-template-columns:auto;
     grid-template-rows: repeat: auto;
     grid-template-areas: 
-    ". header-img nav-bar nav-bar nav-bar ."
+    ". header header header header ."
     ". form form form form ."
-    ". container container container container .";   
+    ". container container container .";   
     grid-gap: 5%;
   }
 
@@ -24,26 +26,44 @@
     height: auto;
     position: sticky;
     top: 0;
-}
+              }
+
 
 .nav-bar {
-    grid-area: nav-bar;
-    grid-column: 3/6;
-    text-align: center;
-    top: 0;
-}
+    grid-area: header;
+    grid-column: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0;
+    background-color: transparent;
+    position: sticky;
+    justify-content: space-evenly;
+              }
 
-.header-img {   
-    grid-area: header-image;
-    grid-column: 1/6;
+.nav-link {  
+    padding: 3em;
+    height: auto;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(115, 185, 210);   
+   }
+
+.logo {   
+    
+    grid-area: header;
+    grid-column: auto;
     border-radius: 50%;
     max-width: 5%;
     height: auto;
     margin-left: 1em;
+    padding: 0;
     position: sticky;
     top: 0;
     justify-self:start;
+    background-color: rgb(0, 0, 0);
 }
+
 
 
 
