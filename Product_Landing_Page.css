@@ -11,8 +11,8 @@
 /*css code below for mobile versions*/
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     /*grid-template-areas: 
     ". header header header header header header ."
     ". container container container container conteiner container ."
@@ -22,29 +22,31 @@
   }
 
   .header {
-    grid-area: header;
-    grid-column: 5/9;
-    grid-row: 1/9;
+    grid-area:header;
+    position: fixed;
+    grid-column: 1/12;
+    grid-row: 1/12;
     max-width: 100%;
     height: 1em;
     position: sticky;
     top: 0;
     padding: 1rem;
-    background-color: white;
-              }
+    background-color: ;
+}
 
 
 .nav-bar {
-    grid-column: 5/9;
-    grid-row: 1/9;
+    grid-column: auto;
+    grid-row: auto;
     display: flex;
     flex-wrap: wrap;
     width: auto;
     margin: 0;
     background-color: transparent;
     justify-content: space-evenly;
-    background-color: blue;
+    background-color: ;
               }
+
 
 .nav-link {  
     padding: 2rem;
@@ -56,8 +58,8 @@
    }
 
 .logo {   
-    grid-column: 1/9;
-    grid-row: 1/9;
+    grid-column: auto;
+    grid-row: auto;
     border-radius: 50%;
     max-width: 5%;
     height: auto;
@@ -70,15 +72,15 @@
 
 .form {
     grid-area: form;
-    grid-column: 5/9 ;
-    grid-row: 1/9;
+    grid-column: 12/12;
+    grid-row: 12/12;
     display: flex;
     flex-wrap: wrap;
     max-width: 1rem;
     height: 1rem;
     justify-self: end;
     padding: 1rem;   
-    background-color: red;
+    background-color:;
 }
 
 #email {
@@ -102,9 +104,8 @@
 }
 
 .container {
-    grid-area: container;
-    grid-column: 2/9;
-    grid-row: 3/9;
+    grid-column: 2/12;
+    grid-row: 5/12;
     max-width: 80%;
     height: auto;
     font-size:0.5rem;
@@ -112,22 +113,20 @@
     text-justify:left;
     padding: 1rem;   
     font-size:1rem
-    top:90%;
+    top: 90%;
     background: yellow;
 }
 
 #GamePic {
     grid-area: GamePic;
-    grid-column: 2/9;
-    grid-row: 4/9;
+    grid-column: auto;
+    grid-row: auto;
     border-radius: 0%;
     max-width: 60%;
     height: auto;
     margin-left: 1rem;
     padding: 0;
     top: 0%;
-    
-    
 }
 
 
@@ -135,8 +134,8 @@
   @media screen and (min-width: 736px) {
     .wrapper {
       display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      grid-template-rows: repeat(9, 1fr);
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
       /*grid-template-areas: 
       ". header header header header ."
       ". container container conteiner container ."
@@ -144,4 +143,4 @@
             ". . form form . .";*/              
       gap: 5%;
     }
-    }
+    } 
