@@ -11,8 +11,8 @@
 /*css code below for mobile versions*/
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
     /*grid-template-areas: 
     ". header header header header header header ."
     ". container container container container conteiner container ."
@@ -27,8 +27,8 @@
   .header {
     grid-area:header;
     position: fixed;
-    grid-column: 1/12;
-    grid-row: 1/12;
+    grid-column: 1/24;
+    grid-row: 1/24;
     max-width: 100%;
     height: 8em;
     position: sticky;
@@ -80,8 +80,8 @@
 .form {
     display grid;
     position: sticky;
-    grid-column: 3/12;
-    grid-row: 10/12;
+    grid-column: 3/24;
+    grid-row: 10/24;
     
     max-width: 1rem;
     height: 1rem;
@@ -111,17 +111,45 @@
 }
 
 .container {
-    grid-column: 2/12;
-    grid-row: 5/12;
+    grid-column: 2/24;
+    grid-row: 5/24;
     max-width: 80%;
-    height: auto;
+    height: 10rem;
     font-size:0.5rem;
     text-align: justify;
     text-justify:left;
     padding: 1rem;   
-    font-size:1rem
+    font-size:2rem
     top: 90%;
     background: yellow;
+}
+
+.about-the-game {
+    grid-column: 2/24;
+    grid-row: 10/24;
+    max-width: 80%;
+    height: 15rem;
+    font-size:0.5rem;
+    text-align: justify;
+    text-justify:left;
+    padding: 1rem;   
+    font-size:2rem
+    top: 90%;
+    background: red;
+}
+
+.reviews {
+    grid-column: 2/24;
+    grid-row:14/24;
+    max-width: 80%;
+    height: 15rem;
+    font-size:0.5rem;
+    text-align: justify;
+    text-justify:left;
+    padding: 0rem;   
+    font-size:2rem
+    top: 90%;
+    background: green;
 }
 
 #GamePic {
@@ -141,8 +169,8 @@
   @media screen and (min-width: 736px) {
     .wrapper {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-columns: repeat(24, 1fr);
+      grid-template-rows: repeat(24, 1fr);
       /*grid-template-areas: 
       ". header header header header ."
       ". container container conteiner container ."
