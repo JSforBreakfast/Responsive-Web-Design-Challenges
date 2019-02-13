@@ -1,0 +1,46 @@
+.main-body {
+  display: grid;
+  grid-template-columns: minmax (300px, auto) 1fr;
+  gri-template-areas: "navbar mainContent";
+  grip-gao: 20px;
+}
+
+#navbar {
+  grid-area: navbar;
+  position:fixed;
+}
+
+#navbar a {
+  display:block;
+  border: 1px solid black;
+  padding 5px;
+  margin 10px ;
+  color: black;
+  style: none;
+}
+
+#main-doc {
+  grid-area: mainContent;
+}
+
+header {
+ font-size: 1.5em;
+ font-weight:bold;
+ }
+
+code {
+  background-volor: lightgray;
+  display: block;
+  padding: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  main-body{
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent";
+  }
+  
+  navbar{
+    position: inherit;
+  }
+}
