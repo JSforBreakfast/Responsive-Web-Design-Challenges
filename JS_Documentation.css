@@ -1,46 +1,56 @@
-.main-body {
-  display: grid;
-  grid-template-columns: minmax (300px, auto) 1fr;
-  gri-template-areas: "navbar mainContent";
-  grip-gao: 20px;
+* {
+  min-width:290px;
+    color: lightgray;
+    background-color: black;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
 }
 
 #navbar {
-  grid-area: navbar;
   position:fixed;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  border-right:solid;
+  border-color:lightgray;
 }
 
-#navbar a {
-  display:block;
-  border: 1px solid black;
-  padding 5px;
-  margin 10px ;
-  color: black;
-  style: none;
+header{
+  color:lightgray;
+  font-size: 30px;
+  margin: 5px;
+  text-align:center;
+  font-size:1.8em;
+  font-weight:thin;
 }
 
-#main-doc {
-  grid-area: mainContent;
+#main-doc header{
+  text-align:left;
+  margin:0px;
 }
 
-header {
- font-size: 1.5em;
- font-weight:bold;
- }
-
-code {
-  background-volor: lightgray;
-  display: block;
-  padding: 20px;
+#navbar ul{
+  height:88%;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 
-@media screen and (max-width: 750px) {
-  main-body{
-    grid-template-columns: 1fr;
-    grid-template-areas: "navbar" "mainContent";
-  }
-  
-  navbar{
-    position: inherit;
-  }
+#navbar li {
+  color: lightgray;
+  border:1px solid;
+  border-bottom-width:0px;
+  padding:8px;
+  padding-left:45px;
+  list-style: none;
+  position:relative;
+  left: -50px;
+  width:100%;
 }
+
+#navbar a{
+  color: lightgray;
+    text-decoration:none;
+    cursor:pointer;
+} a
