@@ -3,6 +3,8 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   background-color: #2e2e2e;
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -118,42 +120,31 @@ nav ul li a:hover {
 }
 
 .footer-social-icons {
-  background: #d5d5d5;
+  display:block;
+  margin: 0 auto;
+  background: #d4d4d4;
   padding-top:50px;
   padding-bottom: 50px;
   text-align: center;
-}
-
-._14 {
-  ;
-}
-
-.contact-details {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+  font-size: 1.5em;
+  width: 100%;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 100%;
-}
+   }
+
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
-    font-family: 'Lato', sans-serif;
-    color: #FFF;
-    background: #322f30;
-    -webkit-font-smoothing: antialiased;
-}
+
 a {
     text-decoration: none;
-    color: #fff;
+    color: White;
 }
 p > a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
 }
+
 h1,
 h2,
 h3,
@@ -165,21 +156,22 @@ h6 {
 ._12 {
     font-size: 1.2em;
 }
-._14 {
+.contact {
     font-size: 1.4em;
-  padding: 60px 60px
+    padding:20px;
+  color: #2a2b30;
 }
 ul {
     padding:0;
     list-style: none;
 }
 .footer-social-icons {
-    width: 350px;
+    width: 100%;
     display:block;
     margin: 0 auto;
 }
 .social-icon {
-    color: #353233;
+    color: #d4d4d4;
 }
 ul.social-icons {
     margin-top: 10px;
@@ -190,20 +182,20 @@ ul.social-icons {
     height: 100px;
 }
 .social-icons a {
-    color: #fff;
+    color: #2e2e2e;
     text-decoration: none;
 }
-.fa-facebook {
-    padding:10px 14px;
+.fa fa-github {
+    padding:10px 20px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #d4d4d4;
 }
-.fa-facebook:hover {
-    background-color: #3d5b99;
+.fa fa-github:hover {
+    background-color: black;
 }
 .fa-twitter {
     padding:10px 12px;
@@ -212,35 +204,12 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #d4d4d4;
 }
 .fa-twitter:hover {
     background-color: #00aced;
 }
-.fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-rss:hover {
-    background-color: #eb8231;
-}
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-}
+
 .fa-linkedin {
     padding:10px 14px;
     -o-transition:.5s;
@@ -248,20 +217,8 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #d4d4d4;
 }
 .fa-linkedin:hover {
     background-color: #0073a4;
-}
-.fa-google-plus {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-google-plus:hover {
-    background-color: #e25714;
 }
