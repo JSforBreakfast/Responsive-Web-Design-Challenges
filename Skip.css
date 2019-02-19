@@ -1,0 +1,90 @@
+* {
+  font-family: "Noto Serif JP", sans-serif;
+  margin: 0 auto;
+}
+
+html,
+body {
+  display: block;
+  margin: 5% 5% 5% 5%;
+  text-align: center;
+  min-width: 260px;
+  color: #cbcbcb;
+  background-color: #006f00 ;
+  }
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  
+}
+
+#img-div {
+  margin: 0em;
+  margin-top: 5em;
+  width: 100%;
+  border: -5em solid white;
+  background: white;
+  max-width: auto;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  width: 10%;
+}
+
+p {
+  max-width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  display: block;
+  font-size: -25em;
+  text-indent: 3%;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  text-align: justify;
+}
+h2 {
+  text-align: center;
+}
+ul {
+  text-align: justify;
+}
+#tribute-info {
+  text-align: center;
+}
+#main {
+  margin: 30px auto;
+  padding: 15px;
+  border: 0px solid;
+  border-radius: 5px;
+  background: #363636;
+  display: block;
+}
+
+a:visited {
+  color: green;
+}
+a:link {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
