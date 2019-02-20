@@ -1,21 +1,30 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: '8BITWONDERNominal';
 }
 
 body {
-    background: linear-gradient(to bottom right, #c31432, #240b36);
-}
+    background: linear-gradient(to bottom left, #51e600,#421ace);
+ }
 
-.page {
+.insidebody {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 80%;
+  }
+
+#description {
+    color: whitesmoke;
+    text-align: center;
 }
 
-#title,
-footer, 
-#description {
-    color: #fff;
+footer {
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+#title {
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -24,47 +33,56 @@ footer,
 }
 
 form {
-    box-shadow: -2px 2px 30px -2px rgba(0, 0, 0, .6);
     padding: 5%;
-    background-color: #f5f5f5;
+    background-color: #adabbb;
     margin-bottom: 5%;
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: 5rem;
+  color:#421ace;
 }
 
-input,
-label,
+input {
+    display: box;
+    margin-bottom: 1rem;
+  }
+
+label {
+    display: box;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
 button {
-    display: block;
-    margin-bottom: .8rem;
+    display: box;
+    margin-bottom: 1rem;
+  }
+
+#radio {
+  display: inline;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
 }
 
-input[type="radio"],
-input[type="checkbox"],
-select {
-    display: inline;
-    margin-bottom: 1.5rem;
+#checkbox {
+  display: inline;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
 }
 
 select {
-    background: #fff;
+    background: whitesmoke;
+    color: #747474;
 }
 
 label {
     font-weight: bolder;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
 textarea {
     width: 100%;
-    padding: 1.5%;
+    padding: 2%;
     outline: none;
     font-size: 1rem;
-}
-
-textarea {
     margin-bottom: 10px;
     height: 150px;
     border-radius: 8px;
@@ -74,6 +92,7 @@ button {
     border-radius: 50px;
     padding: 1.5% 6% 1.5% 6%;
     border: 1px solid gray;
+    color: #747474;
 }
 
 input[type="text"],
@@ -89,16 +108,10 @@ select {
 
 .names input[type="text"] {
     display: inline;
-    width: 48%;
-    float: left;
-}
-
-.names input[type="text"]:first-child {
-    margin-right: 2%;
-}
-
-.names input[type="text"]:last-child {
-    margin-left: 2%;
+    width: 40%;
+    float: center;
+   margin-right: 2%;
+   margin-left: 2%;
 }
 
 footer {
@@ -111,7 +124,7 @@ ul {
     margin-left: -5%;
 }
 
-/*media queries*/
+
 @media only screen and (max-width: 800px) {
     .page {
         max-width: 70%;
@@ -125,14 +138,9 @@ ul {
         width: 100%;
     }
 
-    .names input[type="text"]:first-child {
-        margin-right: 0;
+    
     }
-
-    .names input[type="text"]:last-child {
-        margin-left: 0;
-    }
-    input[type="text"],
+input[type="text"],
 input[type="email"],
 input[type="number"],
 select {
